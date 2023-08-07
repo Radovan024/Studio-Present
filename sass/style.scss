@@ -84,12 +84,14 @@ header:last-child {
     width: 100%;
 }
 
-.video {
+.slider-image {
     width: 100%;
     height: 705px;
-    position: relative;
 }
 
+.hidden{
+    display: none;
+}
 .arrow {
     position: absolute;
     top: 70%;
@@ -195,9 +197,13 @@ text3 {
     border: 2px solid #BF0F0F;
 }
 
-.paralax {
-    width: 100%;
-    height: 502px;
+.parallax {
+    background-image: url("../img/car.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .paralax-title {
@@ -346,15 +352,16 @@ text3 {
     list-style: none;
 }
 
-#contact ul li a{
+#contact ul li a {
     text-decoration: none;
     color: #FFFFFF;
 }
 
-.naigation ul li a{
+.naigation ul li a {
     text-decoration: none;
     color: #FFFFFF;
 }
+
 .company {
     color: #FFFFFF4D;
     font-family: Roboto;
@@ -376,9 +383,11 @@ text3 {
     .lang {
         display: none !important;
     }
-    .about-img{
-        width: 100%!important;
+
+    .about-img {
+        width: 100% !important;
     }
+
     .flex {
         display: block;
     }

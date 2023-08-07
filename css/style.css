@@ -68,10 +68,12 @@ header:last-child {
 .nav-links a {
   width: 100%; }
 
-.video {
+.slider-image {
   width: 100%;
-  height: 705px;
-  position: relative; }
+  height: 705px; }
+
+.hidden {
+  display: none; }
 
 .arrow {
   position: absolute;
@@ -149,9 +151,13 @@ text3 {
   background: #FFFFFF;
   border: 2px solid #BF0F0F; }
 
-.paralax {
-  width: 100%;
-  height: 502px; }
+.parallax {
+  background-image: url("../img/car.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .paralax-title {
   position: absolute;
