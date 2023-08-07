@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+header {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #D9D9D9;
+}
+
+.nav {
+    width: 100%;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.nav-bar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+header:last-child {
+    margin-left: auto;
+}
+
+.lang li {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    list-style: none;
+    display: inline-block;
+}
+
+.li a {
+    color: #595959;
+}
+
+#hamburger {
+    display: none;
+}
+
+#hamburger-ico {
+    width: 40px;
+    height: 40px;
+}
+
+#first {
+    color: #888787;
+    text-decoration: none;
+}
+
+.nav-links {
+    justify-content: space-between;
+    text-align: center;
+}
+
+.nav-link {
+    height: 62px;
+    color: #474747;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none;
+    border-left: 0.5px solid #88878766;
+}
+
+.nav-link:last-child {
+    border-right: 0.5px solid #88878766;
+}
+
+.nav-links a {
+    width: 100%;
+}
+
+.video {
+    width: 100%;
+    height: 705px;
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.about {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-img {
+    width: 900px;
+}
+
+.about-2 {
+    padding: 50px 0 50px 0;
+    width: 524px;
+}
+
+@mixin apply-line($styles) {
+
+    @each $property,
+    $value in $styles {
+        #{$property}: $value;
+    }
+}
+
+$red-line-style: (
+    content: "",
+    display: block,
+    width: 14rem,
+    height: 5px,
+    background-color: #BF0F0F,
+    margin-top: 1rem
+);
+
+$grey-line-style: (
+    content: "",
+    display: block,
+    background-color: #C4C4C466,
+    height: 3px,
+    border: none,
+    margin-top: 5%
+);
+
+.title {
+    color: #303030;
+    font-family: Roboto;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    margin-bottom: 10%;
+
+    &::after {
+        @include apply-line($red-line-style);
+    }
+}
+
+#text1 {
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    margin: 10% 0% 10% 0%;
+
+    &::after {
+        @include apply-line($grey-line-style);
+    }
+}
+
+#text2,
+text3 {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+
+.btn-1 {
+    height: 48px;
+    padding: 0px 16px 0px 16px;
+    background: #BF0F0F;
+    color: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+.btn-1:hover {
+    color: #BF0F0F;
+    background: #FFFFFF;
+    border: 2px solid #BF0F0F;
+}
+
+.paralax {
+    width: 100%;
+    height: 502px;
+}
+
+.paralax-title {
+    position: absolute;
+    left: 50%;
+}
+
+.section {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.space {
+    justify-content: space-between;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    &::after {
+        @include apply-line($red-line-style);
+    }
+}
+
+#brand-name {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #474747;
+}
+
+#rectangle {
+    width: 100%;
+    height: 345px;
+}
+
+#spec-img {
+    height: 345px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/rectangle.png");
+}
+
+.spec {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    color: #FFFFFF;
+}
+
+.box h1 {
+    font-family: Inter;
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 34px;
+    letter-spacing: 0em;
+}
+
+#title-1 {
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+
+    &::after {
+        @include apply-line($grey-line-style);
+    }
+}
+
+#footer {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/footer.png");
+}
+
+.footer-nav {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#title-2 {
+    color: #FFFFFF;
+}
+
+.naigation ul {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.naigation ul li {
+    font-family: Roboto Condensed;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+}
+
+.copy {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    background: #00000054;
+    background-blend-mode: multiply;
+}
+
+.dvg {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.use ul {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    text-align: right;
+    color: #FFFFFF80;
+    list-style: none;
+}
+
+.use ul li {
+    color: #FFFFFF80;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+#contact {
+    margin: 5%;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    list-style: none;
+}
+
+#contact ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.naigation ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.company {
+    color: #FFFFFF4D;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+}
+
+@media (max-width: 425px) {
+    #hamburger {
+        display: inline;
+    }
+
+    .nav-links {
+        display: none !important;
+    }
+
+    .lang {
+        display: none !important;
+    }
+    .about-img{
+        width: 100%!important;
+    }
+    .flex {
+        display: block;
+    }
+
+    div,
+    .card img {
+        width: 100% !important;
+    }
+
+    .nav-bar {
+        display: flex;
+    }
+
+    .nav-link {
+        border: none;
+        border-bottom: 1px solid #88878766;
+    }
+
+    .footer-nav div {
+        text-align: center;
+    }
+
+    .nav-link:last-child {
+        border-right: none;
+    }
+
+    .use ul {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .use ul li:first-child {
+        margin-left: 0px;
+    }
+
+    #info {
+        text-align: center;
+        display: block;
+    }
+
+}
