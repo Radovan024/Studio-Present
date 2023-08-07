@@ -279,6 +279,18 @@ text3 {
     }
 }
 
+#title-4{
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    max-width: 512px;
+
+    &::after {
+        @include apply-line($grey-line-style);
+    }
+}
 #footer {
     background-size: cover;
     background-repeat: no-repeat;
@@ -325,6 +337,9 @@ text3 {
     justify-content: space-between;
 }
 
+.brends{
+    margin-top: 50px;
+}
 .use ul {
     font-family: Roboto;
     font-size: 14px;

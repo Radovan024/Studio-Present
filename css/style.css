@@ -228,6 +228,21 @@ text3 {
     border: none;
     margin-top: 5%; }
 
+#title-4 {
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  max-width: 512px; }
+  #title-4::after {
+    content: "";
+    display: block;
+    background-color: #C4C4C466;
+    height: 3px;
+    border: none;
+    margin-top: 5%; }
+
 #footer {
   background-size: cover;
   background-repeat: no-repeat;
@@ -266,6 +281,9 @@ text3 {
   width: 100%;
   display: flex;
   justify-content: space-between; }
+
+.brends {
+  margin-top: 50px; }
 
 .use ul {
   font-family: Roboto;
