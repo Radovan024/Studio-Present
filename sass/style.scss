@@ -89,9 +89,10 @@ header:last-child {
     height: 705px;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
+
 .arrow {
     position: absolute;
     top: 70%;
@@ -102,6 +103,7 @@ header:last-child {
 }
 
 .about {
+    background: #F4F4F4;
     padding-top: 5%;
     padding-bottom: 5%;
     display: flex;
@@ -206,9 +208,20 @@ text3 {
     background-size: cover;
 }
 
-.paralax-title {
+#paralax-title {
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0.325em;
     position: absolute;
     left: 50%;
+    color: white;
+    transform: translate(-50%, -500%);
+
+    &::after {
+        @include apply-line($red-line-style);
+    }
 }
 
 .section {
@@ -224,6 +237,20 @@ text3 {
     font-size: 24px;
     font-weight: 400;
     text-transform: uppercase;
+
+    &::after {
+        @include apply-line($red-line-style);
+    }
+}
+
+.pro {
+    max-width: 524px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.product-line {
+    border: none;
 
     &::after {
         @include apply-line($red-line-style);
@@ -279,7 +306,7 @@ text3 {
     }
 }
 
-#title-4{
+#title-4 {
     font-family: Inter;
     font-size: 28px;
     font-weight: 400;
@@ -291,6 +318,7 @@ text3 {
         @include apply-line($grey-line-style);
     }
 }
+
 #footer {
     background-size: cover;
     background-repeat: no-repeat;
@@ -337,9 +365,10 @@ text3 {
     justify-content: space-between;
 }
 
-.brends{
+.brends {
     margin-top: 50px;
 }
+
 .use ul {
     font-family: Roboto;
     font-size: 14px;
@@ -384,6 +413,32 @@ text3 {
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0.03em;
+}
+
+#contact li {
+    &:nth-child(1)::before {
+        margin: 5px;
+        content: url("../img/location.png");
+    }
+
+    &:nth-child(2)::before {
+        margin: 5px;
+        content: url("../img/telephone.png");
+    }
+
+    &:nth-child(3)::before {
+        margin: 5px;
+        content: url("../img/mail.png");
+    }
+}
+
+.socilal {
+    margin-bottom: 10px;
+}
+
+.dark {
+    color: white;
+    background-color: black;
 }
 
 @media (max-width: 425px) {
