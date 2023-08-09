@@ -116,7 +116,7 @@ header:last-child {
 }
 
 .about-2 {
-    padding: 50px 0 50px 0;
+    padding: 50px;
     width: 524px;
 }
 
@@ -131,7 +131,8 @@ header:last-child {
 $red-line-style: (
     content: "",
     display: block,
-    width: 14rem,
+    max-width: 70%,
+    margin: auto,
     height: 5px,
     background-color: #BF0F0F,
     margin-top: 1rem
@@ -241,6 +242,8 @@ text3 {
     &::after {
         @include apply-line($red-line-style);
     }
+
+    margin-bottom: 40px;
 }
 
 .pro {
@@ -406,6 +409,10 @@ text3 {
     display: inline-block;
 }
 
+.products {
+    text-align: center;
+}
+
 #contact {
     margin: 5%;
     font-family: Roboto;
@@ -470,7 +477,6 @@ text3 {
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 30px;
-    border-radius: 20px;
     z-index: 9;
 }
 
@@ -486,7 +492,7 @@ text3 {
     cursor: pointer;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
     #hamburger {
         display: inline;
     }
@@ -497,6 +503,10 @@ text3 {
 
     .lang {
         display: none !important;
+    }
+
+    .about-2 {
+        width: 70% !important;
     }
 
     .about-img {
@@ -519,6 +529,29 @@ text3 {
     .nav-link {
         border: none;
         border-bottom: 1px solid #88878766;
+    }
+
+    .spec {
+        top: 0%;
+        padding-top: 150px;
+    }
+
+    #spec-img {
+        height: 800px;
+        background-image: url("../img/rectangle1.png");
+    }
+
+    .box {
+        margin-bottom: 50px;
+    }
+
+    .products {
+        display: flex !important;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 30% !important;
     }
 
     .footer-nav div {

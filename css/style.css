@@ -95,7 +95,7 @@ header:last-child {
   width: 900px; }
 
 .about-2 {
-  padding: 50px 0 50px 0;
+  padding: 50px;
   width: 524px; }
 
 .title {
@@ -109,7 +109,8 @@ header:last-child {
   .title::after {
     content: "";
     display: block;
-    width: 14rem;
+    max-width: 70%;
+    margin: auto;
     height: 5px;
     background-color: #BF0F0F;
     margin-top: 1rem; }
@@ -173,7 +174,8 @@ text3 {
   #paralax-title::after {
     content: "";
     display: block;
-    width: 14rem;
+    max-width: 70%;
+    margin: auto;
     height: 5px;
     background-color: #BF0F0F;
     margin-top: 1rem; }
@@ -188,11 +190,13 @@ text3 {
 .card p {
   font-size: 24px;
   font-weight: 400;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 40px; }
   .card p::after {
     content: "";
     display: block;
-    width: 14rem;
+    max-width: 70%;
+    margin: auto;
     height: 5px;
     background-color: #BF0F0F;
     margin-top: 1rem; }
@@ -207,7 +211,8 @@ text3 {
   .product-line::after {
     content: "";
     display: block;
-    width: 14rem;
+    max-width: 70%;
+    margin: auto;
     height: 5px;
     background-color: #BF0F0F;
     margin-top: 1rem; }
@@ -274,7 +279,8 @@ text3 {
   .text1::after {
     content: "";
     display: block;
-    width: 14rem;
+    max-width: 70%;
+    margin: auto;
     height: 5px;
     background-color: #BF0F0F;
     margin-top: 1rem; }
@@ -351,6 +357,9 @@ text3 {
   margin-left: 20px;
   display: inline-block; }
 
+.products {
+  text-align: center; }
+
 #contact {
   margin: 5%;
   font-family: Roboto;
@@ -404,7 +413,6 @@ text3 {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   padding: 30px;
-  border-radius: 20px;
   z-index: 9; }
 
 .popup-content {
@@ -417,13 +425,15 @@ text3 {
   padding: 5px 10px;
   cursor: pointer; }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   #hamburger {
     display: inline; }
   .nav-links {
     display: none !important; }
   .lang {
     display: none !important; }
+  .about-2 {
+    width: 70% !important; }
   .about-img {
     width: 100% !important; }
   .flex {
@@ -436,6 +446,19 @@ text3 {
   .nav-link {
     border: none;
     border-bottom: 1px solid #88878766; }
+  .spec {
+    top: 0%;
+    padding-top: 150px; }
+  #spec-img {
+    height: 800px;
+    background-image: url("../img/rectangle1.png"); }
+  .box {
+    margin-bottom: 50px; }
+  .products {
+    display: flex !important; }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 30% !important; }
   .footer-nav div {
     text-align: center; }
   .nav-link:last-child {

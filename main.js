@@ -25,7 +25,7 @@ arrow.addEventListener("click", function () {
     if (arrow_i == i) {
       slider_image[i].classList.remove('hidden');
       arrow_i++; break;
-    }else{
+    } else {
       slider_image[i].classList.add('hidden');
     }
     if (arrow_i == slider_image.length) {
@@ -36,4 +36,16 @@ arrow.addEventListener("click", function () {
       arrow_i = 1; break;
     };
   }
-})
+});
+
+const toggleButton = document.getElementById("toggleButton");
+
+toggleButton.addEventListener("click", toggleDarkMode);
+
+function toggleDarkMode() {
+  const elements = document.querySelectorAll("*");
+
+  elements.forEach(element => {
+    element.classList.toggle("dark");
+  });
+}
