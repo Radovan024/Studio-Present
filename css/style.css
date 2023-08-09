@@ -258,6 +258,27 @@ text3 {
     border: none;
     margin-top: 5%; }
 
+.title-1 {
+  font-family: Roboto;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0em; }
+
+.text1 {
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em; }
+  .text1::after {
+    content: "";
+    display: block;
+    width: 14rem;
+    height: 5px;
+    background-color: #BF0F0F;
+    margin-top: 1rem; }
+
 #title-4 {
   font-family: Inter;
   font-size: 28px;
@@ -382,17 +403,12 @@ text3 {
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
-  padding: 80px;
+  padding: 30px;
   border-radius: 20px;
   z-index: 9; }
 
 .popup-content {
-  text-align: center;
-  font-size: 3rem; }
-
-.popup-heading {
-  font-size: 5rem;
-  margin-bottom: 1rem; }
+  text-align: center; }
 
 #closePopup {
   background-color: white;
